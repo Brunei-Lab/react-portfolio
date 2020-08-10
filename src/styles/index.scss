@@ -1,11 +1,5 @@
 @import './Constants.scss';
 
-@mixin center-image($color) {
-    background-color: $color;
-    display: flex;
-    align-items: center;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -14,54 +8,6 @@
 
 body {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALUlEQVQoU2O8fv26MQMBwEiyIk1NzbPYNGGYhE0hVuvQFZJuEtFuwhYaRAUBAF9iLIIoz8ZgAAAAAElFTkSuQmCC) repeat;
-}
-
-hr { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: 100px;
-    background-color: black;
-} 
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    .language-badge {
-        border: solid 2px $base-gray;
-    }
-    .btn-container {
-        a {
-            text-decoration: none;
-            color: #6c757d;
-            &:hover {
-                color: white;
-            }
-        img {
-            color: #6c757d
-        }
-        }
-    }
-}
-
-.fb-bg {
-    @include center-image(#7bc456);
-}
-
-.mo-bg {
-    @include center-image(#e0a890);
-}
-
-.pe-bg {
-    @include center-image(#129490);
-}
-
-.cal-bg {
-    @include center-image(#ce1483);
-}
-
-.tnw-bg {
-    @include center-image(#065143);
 }
 
 #skills-box {
