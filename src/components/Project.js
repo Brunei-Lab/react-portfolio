@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Project = () => {
+const Project = ({project}) => {
+  console.log(project)
   return (
     <div className="card">
       <div className="card-image">

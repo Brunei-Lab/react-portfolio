@@ -12,8 +12,8 @@ const Presentation = () => {
   return (
     <div className="Presentation">
       <h1 className="title">{heading}</h1>
-      {pText.map(text => (
-        <h5>{text}</h5>
+      {pText.map((text, i) => (
+        <h5 key={i}>{text}</h5>
       ))}
     </div>
   ) 
