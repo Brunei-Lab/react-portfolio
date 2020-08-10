@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Presentation.scss';
 
 const Presentation = () => {
   const heading = 'Hello, I am Bruna.'
@@ -10,9 +11,9 @@ const Presentation = () => {
 
   return (
     <div className="Presentation">
-      <h1>{heading}</h1>
+      <h1 className="title">{heading}</h1>
       {pText.map(text => (
-        <p>{text}</p>
+        <h5>{text}</h5>
       ))}
     </div>
   ) 
