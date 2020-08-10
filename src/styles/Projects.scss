@@ -29,39 +29,50 @@ hr {
   width: 1030px;
   margin: 48px auto;
   display: flex;
-  .language-badge {
+  .card-image {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .card-description {
+    width: 50%;
+    .tech-badge {
       border: solid 2px $base-gray;
+    }
+    .btn-container {
+        a {
+            text-decoration: none;
+            color: #6c757d;
+            &:hover {
+                color: white;
+            }
+        img {
+            color: #6c757d
+        }
+        }
+    }
   }
-  .btn-container {
-      a {
-          text-decoration: none;
-          color: #6c757d;
-          &:hover {
-              color: white;
-          }
-      img {
-          color: #6c757d
-      }
-      }
-  }
+  
+  
 }
 
-.fb-bg {
+.facebookImg {
   @include center-image(#7bc456);
 }
 
-.mo-bg {
+.membersOnlyImg {
   @include center-image(#e0a890);
 }
 
-.pe-bg {
+.privateEventsImg {
   @include center-image(#129490);
 }
 
-.cal-bg {
+.calculatorImg {
   @include center-image(#ce1483);
 }
 
-.tnw-bg {
+.nextWebImg {
   @include center-image(#065143);
 }

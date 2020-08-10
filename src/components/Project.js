@@ -18,7 +18,7 @@ const Project = ({project}) => {
 
   return (
     <div className="card">
-      <div className="card-image">
+      <div className={`card-image ${project["image-ref"]}`}>
         <img src={imgRef[project["image-ref"]]} alt={`${project.title} project screenshot`}/>
       </div>
       <div className="card-description">
