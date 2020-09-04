@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Projects.scss';
+import styles from '../styles/Projects.module.scss';
 import Project from '../components/Project';
 
 const ProjectsContainer = () => {
@@ -16,7 +16,7 @@ const ProjectsContainer = () => {
   }, []);
 
   return (
-    <div className="ProjectsContainer" id="Projects">
+    <div className={styles.ProjectsContainer} id="Projects">
       <h1>Selected Projects</h1>
       <hr />
       { projects.map(project => (
