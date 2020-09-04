@@ -1,15 +1,15 @@
 .Navbar {
   background-color: #f9f7f8;
   height: 80px;
+  width: 100%;
   padding: 13px 20px;
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 3px black;
+  transition: top 0.3s;
   .navbar-links {
     a {
       text-decoration: none;
