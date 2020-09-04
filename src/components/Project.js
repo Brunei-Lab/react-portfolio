@@ -1,11 +1,11 @@
 import React from 'react';
 import TechBadge from './TechBadge';
 import Button from './Button';
-import facebookImg from '../images/facebook.png'
-import membersOnlyImg from '../images/members-only.png'
-import privateEventsImg from '../images/private-events.png'
-import calculatorImg from '../images/calculator.png'
-import nextWebImg from '../images/TNW.png'
+import facebookImg from '../assets/images/facebook.png'
+import membersOnlyImg from '../assets/images/members-only.png'
+import privateEventsImg from '../assets/images/private-events.png'
+import calculatorImg from '../assets/images/calculator.png'
+import nextWebImg from '../assets/images/TNW.png'
 
 const Project = ({project}) => {
   const imgRef = {

@@ -1,12 +1,12 @@
 import React from 'react';
-import Logo from '../images/Bruna-logo.png';
+import Logo from '../assets/images/Bruna-logo.png';
 import styles from '../styles/Navbar.module.scss';
 
 const Navbar = () => {
   const links = ['Projects', 'Skills', 'Contact']
 
   return (
-    <nav className={`${styles.Navbar} ${styles["gradient-border"]}`}> 
+    <nav className={styles.Navbar}> 
       <a className={styles.logo} href='logo' key='logo'>
         <img src={Logo} alt="Bruna's logo" />
       </a>

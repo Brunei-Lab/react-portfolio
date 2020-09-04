@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: solid 3px black;
   .navbar-links {
     a {
       text-decoration: none;
@@ -18,11 +19,6 @@
       margin-right: 10px;
     }
   }
-}
-
-.gradient-border {
-  border-bottom: solid 3px;
-  border-image: linear-gradient( to right, #dab157, #e9d4a5, #e9d4a591, #dab157, #e9d4a5) 1;;
 }
 
 .logo img {

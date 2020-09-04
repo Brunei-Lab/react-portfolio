@@ -11,7 +11,7 @@
     font-size: 3em;
     margin-bottom: 15px;
     span {
-      color: #f5778d;
+      color: $pink-strong;
     }
   }
   .subtitle {
@@ -27,8 +27,16 @@
     font-family: $font-default;
     font-size: 18px;
     font-weight: 500;
-    color: #212b49;
     line-height: 30px;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      &:hover {
+        color: $pink-strong;
+        text-decoration: underline;
+      }
+    }
   }
   @media screen and (max-width: $lg-screen) {
       width: 65%;
