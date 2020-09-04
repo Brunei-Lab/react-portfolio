@@ -1,0 +1,43 @@
+@import './Constants.scss'; 
+
+.Presentation {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  top: 250px;
+  .title {
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 15px;
+    span {
+      color: #f5778d;
+    }
+  }
+  .subtitle {
+    font-family: $font-default;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    span {
+      font-weight: bold;
+    }
+  }
+  h5 {
+    font-family: $font-default;
+    font-size: 18px;
+    font-weight: 500;
+    color: #212b49;
+    line-height: 30px;
+  }
+  @media screen and (max-width: $lg-screen) {
+      width: 65%;
+  }
+  @media screen and (max-width: $md-screen) {
+      width: 75%;
+  }
+  @media screen and (max-width: $sm-screen) {
+      width: 85%;
+  }
+}
+
