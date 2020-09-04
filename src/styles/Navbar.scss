@@ -1,6 +1,6 @@
 .Navbar {
   background-color: white;
-  height: 66px;
+  height: 80px;
   padding: 13px 20px;
   position: fixed;
   top: 0;
@@ -8,20 +8,24 @@
   left: 0;
   display: flex;
   align-items: center;
-  column-gap: 15px;
-  a {
-    text-decoration: none;
-    color: #7f7f7f;
-    font-weight: bold;
-    font-family: sans-serif;
+  justify-content: space-between;
+  .navbar-links {
+    a {
+      text-decoration: none;
+      color: #7f7f7f;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin-right: 10px;
+    }
   }
 }
 
-.shadow {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+.gradient-border {
+  border-bottom: solid 3px;
+  border-image: linear-gradient( to right, #dab157, #e9d4a5, #e9d4a591, #dab157, #e9d4a5) 1;;
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
   margin: 0 10px;
 }
