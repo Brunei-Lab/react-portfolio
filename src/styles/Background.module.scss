@@ -1,0 +1,15 @@
+.bg-container {
+  height: 495px;
+  position: absolute;
+  top: 700px;
+  left: 0;
+  right: 0;
+  z-index: -5;
+  .watercolor-bg {
+    background-image: url(../images/bg-1.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
