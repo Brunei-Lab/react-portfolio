@@ -6,15 +6,16 @@ import membersOnlyImg from '../assets/images/members-only.png';
 import privateEventsImg from '../assets/images/private-events.png';
 import calculatorImg from '../assets/images/calculator.png';
 import nextWebImg from '../assets/images/TNW.png';
+import test from '../assets/images/projects/test.png';
 import styles from '../styles/Projects.module.scss';
 
 const Project = ({project}) => {
   const imgRef = {
-    'facebookImg': facebookImg,
-    'membersOnlyImg': membersOnlyImg,
-    'privateEventsImg': privateEventsImg,
-    'calculatorImg': calculatorImg,
-    'nextWebImg': nextWebImg,
+    'facebookImg': test,
+    'membersOnlyImg': test,
+    'privateEventsImg': test,
+    'calculatorImg': test,
+    'nextWebImg': test
   }
 
   return (

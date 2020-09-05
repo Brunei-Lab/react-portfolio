@@ -27,6 +27,7 @@
     justify-content: space-between;
     row-gap: 100px;
     .card {
+      min-height: 800px;
       width: 47%;
       padding: 25px;
       border-radius: 3px;
@@ -35,13 +36,13 @@
       -moz-box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
       box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
       .card-image {
-        // width: 50%;
+        height: 50%;
         img {
           width: 100%;
         }
       }
       .card-description {
-        // width: 50%;
+        height: 50%;
         h3 {
           font-weight: bold;
           font-size: 30px;
@@ -60,22 +61,22 @@
   }
 }  
 
-.facebookImg {
-  @include center-image(#7bc456);
-}
+// .facebookImg {
+//   @include center-image(#7bc456);
+// }
 
-.membersOnlyImg {
-  @include center-image(#e0a890);
-}
+// .membersOnlyImg {
+//   @include center-image(#e0a890);
+// }
 
-.privateEventsImg {
-  @include center-image(#129490);
-}
+// .privateEventsImg {
+//   @include center-image(#129490);
+// }
 
-.calculatorImg {
-  @include center-image(#ce1483);
-}
+// .calculatorImg {
+//   @include center-image(#ce1483);
+// }
 
-.nextWebImg {
-  @include center-image(#065143);
-}
+// .nextWebImg {
+//   @include center-image(#065143);
+// }

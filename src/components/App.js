@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       < Navbar />
       < Presentation />
-      < Background background="watercolor-bg"/>
+      < Background background="Geometric" position="760px" />
       < ProjectsContainer />
+      < Background background="Dotted" position="3500px"/>
     </div>
   );
 }
