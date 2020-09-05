@@ -1,3 +1,5 @@
+@import './Constants.scss';
+
 .Navbar {
   background-color: #f9f7f8;
   height: 80px;
@@ -9,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 3px black;
+  border-bottom: solid 3px;
   transition: top 0.3s;
   .navbar-links {
     a {
@@ -21,6 +23,11 @@
     }
   }
 }
+
+// .gradient-border {
+//   border-bottom: solid 3px;
+//   border-image: linear-gradient( to right, $gold, #e9d4a5, #e9d4a591, $gold, #e9d4a5) 1;
+// }
 
 .logo img {
   height: 60px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/images/Bruna-logo-gold.png';
+import Logo from '../assets/images/Bruna-logo.png';
 import styles from '../styles/Navbar.module.scss';
 
 const Navbar = () => {
