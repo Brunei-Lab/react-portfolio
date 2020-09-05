@@ -1,15 +1,25 @@
 .bg-container {
-  height: 495px;
+  height: 915px;
   position: absolute;
   top: 760px;
   left: 0;
   right: 0;
   z-index: -5;
+  opacity: 0.8;
   .watercolor-bg {
-    background-image: url(../assets/images/bg-1.png);
+    background-image: url(../assets/images/geometric-bg.png);
+    // background-image: url(../assets/images/bg-1.png);
     height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .geometric-bg {
+    background-image: url(../assets/images/geometric-bg.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }
