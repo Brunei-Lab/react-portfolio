@@ -1,28 +1,11 @@
 @import './Constants.scss'; 
+@import './commom.module.scss';
 
 .Presentation {
   margin: 0 auto;
   width: 50%;
   position: relative;
   top: 250px;
-  .title {
-    font-family: $title-font;
-    font-weight: 500;
-    font-size: 3em;
-    margin-bottom: 15px;
-    span {
-      color: $pink-strong;
-    }
-  }
-  .subtitle {
-    font-family: $font-default;
-    font-size: 25px;
-    font-weight: normal;
-    margin-bottom: 15px;
-    span {
-      font-weight: bold;
-    }
-  }
   h5 {
     font-family: $font-default;
     font-size: 18px;
@@ -33,7 +16,7 @@
       font-weight: bold;
       color: black;
       &:hover {
-        color: $pink-strong;
+        color: $gold;
         text-decoration: underline;
       }
     }

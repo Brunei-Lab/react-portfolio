@@ -1,0 +1,19 @@
+.title {
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 3em;
+  margin-bottom: 15px;
+  span {
+    color: $pink-strong;
+  }
+}
+
+.subtitle {
+  font-family: $font-default;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  span {
+    font-weight: bold;
+  }
+}

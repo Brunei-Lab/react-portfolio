@@ -17,11 +17,12 @@ const ProjectsContainer = () => {
 
   return (
     <div className={styles.ProjectsContainer} id="Projects">
-      <h1>Selected Projects</h1>
-      <hr />
-      { projects.map(project => (
-        < Project key={project.title} project={project}/>
-      ))}
+      <h1 className={styles.title}>Selected projects</h1>
+      <div className={styles["projects-wrapper"]} >
+        { projects.map(project => (
+          < Project key={project.title} project={project}/>
+        ))}
+      </div>
     </div>
   )
 }
