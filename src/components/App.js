@@ -4,6 +4,7 @@ import Presentation from './Presentation';
 import ProjectsContainer from '../containers/ProjectsContainer';
 import Background from './Background';
 import Skills from '../containers/SkillsContainer';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       < ProjectsContainer />
       < Background background="Dotted" position="3500px"/>
       < Skills />
+      < Contact />
     </div>
   );
 }
