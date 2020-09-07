@@ -1,27 +1,17 @@
 import React from 'react';
 import styles from '../styles/Contact.module.scss';
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
-import { ImMail } from 'react-icons/im';
 
-const Contact = () => {
-  const title = "Let's talk? Send me a message!";
-  const contactLinks = [
-                        { link: "https://www.linkedin.com/in/brunagenz/", icon: FaLinkedin},
-                        { link: "https://github.com/bruna-genz", icon: FaGithubSquare},
-                        { link: "https://twitter.com/Bruna_GK", icon: FaTwitterSquare},                        
-                        { link: "mailto:brunagenz92@gmailcom?subject='portfolio contact'", icon: ImMail},
-                      ]
-
-  return (
-    <div className={styles.Contact}>
-      <h1 className={styles.title}>{ title }</h1>
+const Contact = ({ contactLinks }) => (
+  <div className={styles.Contact}>
+    <h1 className={styles.title}>Let's talk? <span>Send me a message!</span></h1>
+    <div className={styles["links-container"]}>
       { contactLinks.map(contact => (
-        <a className={styles.contact} href={contact.link}>
+        <a className={styles["contact-link"]} href={contact.link} target="_blank" rel="noopener noreferrer">
           < contact.icon />
         </a>
       ))}
     </div>
-  )
-}
+  </div>
+)
 
 export default Contact;

@@ -1,0 +1,21 @@
+.Footer {
+  position: relative;
+  top: 1000px;
+  margin: 20px 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  p {
+    a {
+      height: max-content;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-left: 5px;
+      img {
+        height: 35px;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
