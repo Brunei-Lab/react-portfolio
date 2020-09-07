@@ -1,0 +1,44 @@
+.Daisy {
+  position: absolute;
+  top: 47%;
+  right: 28%;
+}
+
+.Sparckles {
+  position: absolute;
+  top: 23%;
+  right: 39%;
+  img {
+    transform: scaleX(-1);
+    height: 130px;
+  }
+}
+
+.SmallDaisy {
+  position: absolute;
+  top: 30%;
+  right: 22%;
+  height: 50%;
+  img {
+    height: 50%;
+    transform: scaleX(-1);
+  }
+}
+
+.SparcklesLeft {
+  position: absolute;
+  top: 52%;
+  right: 54%;
+  img {
+    height: 120px;
+  }
+}
+
+.SparcklesRight {
+  position: absolute;
+  top: 61%;
+  right: 18%;
+  img {
+    height: 120px;
+  }
+}

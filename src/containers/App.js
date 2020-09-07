@@ -6,6 +6,7 @@ import Background from '../components/Background';
 import Skills from './SkillsContainer';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Elements from '../components/Elements';
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import { ImMail } from 'react-icons/im';
 
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       < Navbar contactLinks={contactLinks} />
       < Presentation />
+      < Elements />
       < Background background="Geometric" position="760px" />
       < ProjectsContainer />
       < Background background="Dotted" position="3500px"/>
