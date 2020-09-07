@@ -16,18 +16,23 @@
   .navbar-links {
     a {
       text-decoration: none;
-      color: #7f7f7f;
-      font-weight: bold;
-      font-family: sans-serif;
+      color: black;
       margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 35px;
+      svg {
+        display: flex;
+      }
+      &:last-of-type {
+        font-size: 32px;
+      }
+      &:hover {
+        color: $gold-light;
+      }
     }
   }
 }
-
-// .gradient-border {
-//   border-bottom: solid 3px;
-//   border-image: linear-gradient( to right, $gold, #e9d4a5, #e9d4a591, $gold, #e9d4a5) 1;
-// }
 
 .logo img {
   height: 60px;
