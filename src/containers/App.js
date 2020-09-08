@@ -28,6 +28,7 @@ function App() {
       < Background background="Geometric" position="3575px"/>
       < Skills />
       < Contact contactLinks={contactLinks} />
+      < Background background="Daisys" position="4845px"/>
       < Footer />
     </div>
   );

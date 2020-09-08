@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 3px;
+  box-shadow: 2px 2px 5px 0px rgba(227, 227, 227, 0.67);
   transition: top 0.3s;
   .navbar-links {
     a {
