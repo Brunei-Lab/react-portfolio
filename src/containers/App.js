@@ -23,9 +23,9 @@ function App() {
       < Navbar contactLinks={contactLinks} />
       < Presentation />
       < Elements />
-      < Background background="Geometric" position="760px" />
+      < Background background="Pink" position="760px" />
       < ProjectsContainer />
-      < Background background="Dotted" position="3500px"/>
+      < Background background="Geometric" position="3575px"/>
       < Skills />
       < Contact contactLinks={contactLinks} />
       < Footer />
