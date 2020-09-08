@@ -1,25 +1,28 @@
 import React from 'react';
 import TechBadge from './TechBadge';
 import Button from './Button';
-import facebookImg from '../assets/images/facebook.png';
-import membersOnlyImg from '../assets/images/members-only.png';
-import privateEventsImg from '../assets/images/private-events.png';
-import calculatorImg from '../assets/images/calculator.png';
-import nextWebImg from '../assets/images/TNW.png';
-import test from '../assets/images/projects/test.png';
+import facebookImg from '../assets/images/projects/face22.png';
+import capsuleWardrobeImg from '../assets/images/projects/capsule-wardrobe.png';
+import moodImg from '../assets/images/projects/OhMyMood.png';
+import spaceBurnaImg from '../assets/images/projects/space-burna.png';
+import tttImg from '../assets/images/projects/ttt.png';
+import weatherAppImg from '../assets/images/projects/weather-app.png';
+import worthyWorkImg from '../assets/images/projects/worthy-work.png';
 import styles from '../styles/Projects.module.scss';
 
 const Project = ({project}) => {
   const imgRef = {
-    'facebookImg': test,
-    'membersOnlyImg': test,
-    'privateEventsImg': test,
-    'calculatorImg': test,
-    'nextWebImg': test
+    'facebookImg': facebookImg,
+    'capsuleWardrobeImg': capsuleWardrobeImg,
+    'moodImg': moodImg,
+    'spaceBurnaImg': spaceBurnaImg,
+    'tttImg': tttImg,
+    'weatherAppImg': weatherAppImg,
+    'worthyWorkImg': worthyWorkImg
   }
 
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${styles[project["image-ref"]]}`}>
       <div className={styles["card-description"]}>
         <h3>{project.title}</h3>
         <p>{project.description}</p>

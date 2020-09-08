@@ -25,10 +25,10 @@ function App() {
       < Elements />
       < Background background="Pink" position="760px" />
       < ProjectsContainer />
-      < Background background="Geometric" position="3575px"/>
+      < Background background="Geometric" position="4010px"/>
       < Skills />
       < Contact contactLinks={contactLinks} />
-      < Background background="Daisys" position="4845px"/>
+      < Background background="Daisys" position="5280px"/>
       < Footer />
     </div>
   );
