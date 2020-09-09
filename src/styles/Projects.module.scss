@@ -9,7 +9,19 @@
 
 .ProjectsContainer {
   position: relative;
-  top: 760px;
+  top: 500px;
+  @include breakpoint(desktop) {
+    top: 480px;
+  }
+  @include breakpoint(laptop) {
+    top: 460px;
+  }
+  @include breakpoint(tablet) {
+    top: 400px;
+  }
+  @include breakpoint(phablet) {
+    top: 315px;
+  }
   h1 {
     text-align: center;
   }
@@ -26,6 +38,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 100px;
+    @include breakpoint(desktop) {
+      margin: 100px auto;
+      width: 80%;
+      row-gap: 50px;
+    }
+    @include breakpoint(laptop) {
+      width: 85%;
+      margin: 90px auto;
+    }
+    @include breakpoint(phablet) {
+      width: 90%;
+      margin: 70px auto;
+    }
     .card {
       width: 47%;
       padding: 25px;
@@ -34,24 +59,48 @@
       -webkit-box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
       -moz-box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
       box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
+      @include breakpoint(laptop) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+      }
       .card-image {
         max-height: 50%;
         img {
           width: 100%;
           margin: 10px;
+          @include breakpoint(laptop) {
+            width: 90%;
+            margin: 10px 45px;
+          }
+          @include breakpoint(phablet) {
+            width: 100%;
+            margin: 10px 0;
+          }
         }
       }
       .card-description {
-        max-height: 50%;
+        min-height: 420px;
         margin-bottom: 15px;
+        @include breakpoint(laptop) {
+          min-height: auto;
+        }
         h3 {
           font-weight: bold;
           font-size: 30px;
+          @include breakpoint(phablet) {
+            font-size: 25px;
+          }
         }
         p {
           width: 85%;
           margin: 25px 0;
           line-height: 25px;
+          @include breakpoint(phablet) {
+            width: 95%;
+          }
         }
         .tech-container {
           display: flex;
@@ -63,10 +112,15 @@
       display: flex;
       width: 100%;
       height: 50%;
+      align-items: center;
       .card-description,
       .card-image {
         width: 50%;
         margin: 10px;
+        @include breakpoint(laptop) {
+          width: 100%;
+          margin: 0;
+        }
       }
     }
   }

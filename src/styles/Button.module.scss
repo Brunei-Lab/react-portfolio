@@ -5,6 +5,9 @@
   display: block;
   font-size: 25px;
   margin-top: 10px;
+  @include breakpoint(phablet) {
+    font-size: 20px;
+  }
   &:first-of-type {
     margin-top: 20px;
   }
