@@ -1,13 +1,50 @@
+@import './Constants.scss';
+
 .Daisy {
   position: absolute;
   top: 47%;
-  right: 24%;
+  right: 23%;
+  @include breakpoint(desktop) {
+    right: 17%;
+    img {
+      height: 400px;
+    }
+  }
+  @include breakpoint(laptop) {
+    top: 48%;
+    right: 8%;
+    img {
+      height: 300px;
+    }
+  }
+  @include breakpoint(tablet) {
+    top: 43%;
+    right: 4%;
+    img {
+      height: 250px;
+    }
+  }
+  @include breakpoint(phablet) {
+    top: 40%;
+    img {
+      height: 200px;
+    }
+  }
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 
 .Sparckles {
   position: absolute;
-  top: 27%;
-  right: 37%;
+  top: 21%;
+  right: 36%;
+  @include breakpoint(desktop) {
+    right: 30%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
   img {
     transform: scaleX(-1);
     height: 130px;
@@ -16,19 +53,30 @@
 
 .SmallDaisy {
   position: absolute;
-  top: 28%;
-  right: 19%;
-  height: 50%;
+  top: 26%;
+  right: 18%;
+  @include breakpoint(desktop) {
+    right: 11%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
   img {
-    height: 50%;
+    height: 230px;
     transform: scaleX(-1);
   }
 }
 
 .SparcklesLeft {
   position: absolute;
-  top: 52%;
-  right: 51%;
+  top: 53%;
+  right: 53%;
+  @include breakpoint(desktop) {
+    right: 56%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
   img {
     height: 120px;
   }
@@ -36,8 +84,14 @@
 
 .SparcklesRight {
   position: absolute;
-  top: 58%;
-  right: 15%;
+  top: 47%;
+  right: 13%;
+  @include breakpoint(desktop) {
+    right: 7%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
   img {
     height: 120px;
   }

@@ -3,6 +3,12 @@
   font-weight: 500;
   font-size: 3em;
   margin-bottom: 15px;
+  @include breakpoint(tablet) {
+    font-size: 2.7em;
+  }
+  @include breakpoint(phablet) {
+    font-size: 2.5em;
+  }
   span {
     color: $pink-strong;
   }
@@ -13,6 +19,12 @@
   font-size: 25px;
   font-weight: normal;
   margin-bottom: 15px;
+  @include breakpoint(tablet) {
+    font-size: 23px;
+  }
+  @include breakpoint(phablet) {
+    font-size: 20px;
+  }
   span {
     font-weight: bold;
     color: $gold;
