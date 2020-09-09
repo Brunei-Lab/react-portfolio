@@ -1,3 +1,5 @@
+@import './Constants.scss';
+
 .bg-container {
   height: 640px;
   position: absolute;
@@ -10,5 +12,30 @@
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+.Pink {
+  top: 70%;
+  @include breakpoint(laptop) {
+    top: 63%;
+  }
+  @include breakpoint(tablet) {
+    top: 54%;
+  }
+  @include breakpoint(phablet) {
+    top: 45%;
+  }
+}
+
+.Geometric {
+  top: 4010px;
+}
+
+.Daisys {
+  top: 5280px;
+  height: 299px;
+  .bg {
+    border-radius: 50% 50% 0 0 / 50%;
   }
 }

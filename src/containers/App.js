@@ -21,12 +21,12 @@ function App() {
     <div className="App">
       < Navbar contactLinks={contactLinks} />
       < Presentation />
-      < Background background="Pink" position="760px" />
+      < Background background="Pink" />
       < ProjectsContainer />
-      < Background background="Geometric" position="4010px"/>
+      < Background background="Geometric" />
       < Skills />
       < Contact contactLinks={contactLinks} />
-      < Background background="Daisys" position="5280px"/>
+      < Background background="Daisys" />
       < Footer />
     </div>
   );
