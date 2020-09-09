@@ -29,12 +29,19 @@
 }
 
 .Geometric {
-  top: 4010px;
+  top: 4225px;
+  @include breakpoint(desktop) {
+    top: 3975px;
+  }
 }
 
 .Daisys {
-  top: 5280px;
+  top: 5506px;
   height: 299px;
+  @include breakpoint(desktop) {
+    top: 5175px;
+    height: 229px;
+  }
   .bg {
     border-radius: 50% 50% 0 0 / 50%;
   }

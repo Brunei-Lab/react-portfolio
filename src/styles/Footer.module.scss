@@ -1,8 +1,10 @@
 .Footer {
-  position: relative;
-  top: 1000px;
-  margin: 20px 30px;
-  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  margin: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;

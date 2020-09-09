@@ -6,39 +6,7 @@
     box-sizing: border-box;
 }
 
-#skills-box {
-    ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-        height: 150px;
-        line-height: 30px;
-        list-style: none;
-        @media screen and (max-width: $sm-screen) {
-           height: 230px;
-        }
-        @media screen and (max-width: $xm-screen) {
-            height: auto;
-         }
-    }
-}
-
-.links-container {
-    display: flex;
-    justify-content: center;
-    @media screen and (max-width: $xxm-screen) {
-        flex-direction: column;
-        align-items: center;
-     }
-}
-
-.credits {
-    color: #9897A0;
-    a {
-        color: #9897A0;
-        &:hover {
-            color: #9897A0;
-        }
-    }
+.App {
+    position: relative;
+    padding-bottom: 50px;
 }

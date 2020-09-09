@@ -9,19 +9,6 @@
 
 .ProjectsContainer {
   position: relative;
-  top: 500px;
-  @include breakpoint(desktop) {
-    top: 480px;
-  }
-  @include breakpoint(laptop) {
-    top: 460px;
-  }
-  @include breakpoint(tablet) {
-    top: 400px;
-  }
-  @include breakpoint(phablet) {
-    top: 315px;
-  }
   h1 {
     text-align: center;
   }
@@ -33,19 +20,17 @@
   } 
   .projects-wrapper {
     width: 75%;
-    margin: 120px auto;
+    margin: 90px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 100px;
     @include breakpoint(desktop) {
-      margin: 100px auto;
       width: 80%;
       row-gap: 50px;
     }
     @include breakpoint(laptop) {
       width: 85%;
-      margin: 90px auto;
     }
     @include breakpoint(phablet) {
       width: 90%;
