@@ -1,0 +1,62 @@
+.Loader {
+  background: rgb(242,155,169);
+  background: linear-gradient(0deg, rgba(242,155,169,1) 0%, rgba(246,150,166,1) 10%, rgba(251,136,158,1) 20%, rgba(255,131,153,1) 30%, rgba(250,125,147,1) 40%, rgba(251,117,140,0.9822129535407913) 50%, rgba(251,126,148,1) 60%, rgba(255,131,153,1) 70%, rgba(251,136,158,1) 80%, rgba(246,150,166,1) 90%, rgba(242,155,169,1) 100%); 
+  height: 100vh;
+  .spinner {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    -webkit-animation: sk-rotate 4.0s infinite linear;
+    animation: sk-rotate 4.0s infinite linear;
+    .daisy-one,
+    .daisy-two {
+      height: 100px;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+
+      -webkit-animation: sk-bounce 2.5s infinite ease-in-out;
+      animation: sk-bounce 2.5s infinite ease-in-out;
+    }
+    .daisy-two {
+      top: auto;
+      bottom: 0;
+
+      -webkit-animation-delay: -1.4s;
+      animation-delay: -1.4s;
+    }
+  }
+}
+
+@-webkit-keyframes sk-rotate { 
+  100% { 
+    -webkit-transform: rotate(360deg) 
+  }
+}
+
+@keyframes sk-rotate { 
+  100% { 
+    transform: rotate(360deg); -webkit-transform: rotate(360deg) 
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { 
+    -webkit-transform: scale(0.0) 
+  }
+  50% {
+    -webkit-transform: scale(1.0) 
+  }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
