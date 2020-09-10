@@ -1,4 +1,5 @@
-@import './Constants.scss';
+@import './constants.scss';
+@import './animations.scss';
 
 .Navbar {
   background-color: #f9f7f8;
@@ -29,6 +30,7 @@
       }
       &:hover {
         color: $gold-light;
+        animation: pulse 3s infinite linear;
       }
     }
   }
