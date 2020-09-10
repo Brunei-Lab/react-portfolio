@@ -20,6 +20,9 @@
     @include breakpoint(phablet) {
       margin: 200px 7% 315px 8%;
     }
+    @include breakpoint(phablet) {
+      margin: 250px 7% 315px 8%;
+    }
     h5 {
       font-family: $font-default;
       font-size: 18px;
@@ -40,6 +43,11 @@
       @include breakpoint(phablet) {
         font-size: 14px;
         line-height: 25px;
+        margin-bottom: 4px;
+      }
+      @include breakpoint(mobile) {
+        line-height: 20px;
+        margin-bottom: 7px;
       }
     }
   }

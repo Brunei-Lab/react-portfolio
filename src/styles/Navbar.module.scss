@@ -37,4 +37,7 @@
 .logo img {
   height: 60px;
   margin: 0 10px;
+  @include breakpoint(mobile) {
+    height: 50px;
+  }
 }

@@ -16,7 +16,7 @@
 }
 
 .Pink {
-  top: 11%;
+  top: 12%;
   @include breakpoint(laptop) {
     top: 6.6%;
   }
@@ -26,10 +26,13 @@
   @include breakpoint(phablet) {
     top: 5%;
   }
+  @include breakpoint(mobile) {
+    top: 7%;
+  }
 }
 
 .Geometric {
-  top: 73%;
+  top: 75%;
   @include breakpoint(laptop) {
     top: 83%;
   }
@@ -41,6 +44,9 @@
 .Daisys {
   bottom: 0;
   height: 185px;
+  @include breakpoint(mobile) {
+    height: 155px;
+  }
   .bg {
     border-radius: 50% 50% 0 0 / 50%;
   }

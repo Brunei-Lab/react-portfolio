@@ -1,3 +1,5 @@
+@import './Constants.scss';
+
 .Footer {
   position: absolute;
   bottom: 0;
@@ -8,6 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  @include breakpoint(mobile) {
+    height: 40px;
+    margin: 0 15px;
+  }
   p {
     a {
       height: max-content;
@@ -17,6 +23,9 @@
       img {
         height: 35px;
         vertical-align: bottom;
+        @include breakpoint(mobile) {
+          height: 30px;
+        }
       }
     }
   }

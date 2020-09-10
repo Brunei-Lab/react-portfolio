@@ -9,6 +9,9 @@
 
 .ProjectsContainer {
   position: relative;
+  @include breakpoint(mobile) {
+    margin-top: 60px;
+  }
   h1 {
     text-align: center;
   }
@@ -35,6 +38,9 @@
     @include breakpoint(phablet) {
       width: 90%;
       margin: 70px auto;
+    }
+    @include breakpoint(mobile) {
+      margin: 40px auto;
     }
     .card {
       width: 47%;
@@ -85,6 +91,11 @@
           line-height: 25px;
           @include breakpoint(phablet) {
             width: 95%;
+          }
+          @include breakpoint(mobile) {
+            font-size: 15px;
+            margin: 15px 0;
+            line-height: 22px;
           }
         }
         .tech-container {
