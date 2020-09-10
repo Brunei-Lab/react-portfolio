@@ -22,6 +22,7 @@
       margin: 70px auto;
     }
     @include breakpoint(mobile) {
+      height: 530px;
       width: 90%;
       margin: 40px auto;
       font-size: 15px;
