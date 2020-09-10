@@ -28,12 +28,12 @@ const Project = ({project}) => {
         <p>{project.description}</p>
         <div className={styles["tech-container"]}>
           {project['tools'].map(tech => (
-            <TechBadge text={tech} />
+            <TechBadge text={tech} key={tech}/>
           ))}
         </div>
         <div className={styles["btn-container"]}>
           {project['links'].map(link => (
-            <Button type={link.type} url={link.url} />
+            <Button type={link.type} url={link.url} key={link.type}/>
           ))}
         </div>
       </div>

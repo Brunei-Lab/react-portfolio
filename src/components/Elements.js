@@ -16,7 +16,7 @@ const Elements = () => {
 
   return (
     elements.map(element => (
-      <div className={styles[element.name]} >
+      <div className={styles[element.name]} key={element.name} >
         <img src={element.image} alt={`A watercolor drawing`} />
       </div>
     ))
