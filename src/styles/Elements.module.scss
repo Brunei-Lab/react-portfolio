@@ -57,9 +57,9 @@
     transform: scaleX(-1);
     height: 130px;
   }
-  &:hover {
-    animation: shake 1s infinite both;
-  }
+  // &:hover {
+  //   animation: shake 1s infinite both;
+  // }
 }
 
 .SmallDaisy {
@@ -98,9 +98,9 @@
   img {
     height: 120px;
   }
-  &:hover {
-    animation: half-turn 1s infinite linear;
-  }
+  // &:hover {
+  //   animation: half-turn 1s infinite linear;
+  // }
 }
 
 .SparcklesRight {
@@ -118,7 +118,7 @@
   img {
     height: 120px;
   }
-  &:hover {
-    animation: half-turn2 1s infinite linear;
-  }
+  // &:hover {
+  //   animation: half-turn2 1s infinite linear;
+  // }
 }
