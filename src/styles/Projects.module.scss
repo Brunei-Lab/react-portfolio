@@ -26,7 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 100px;
+    row-gap: 70px;
     @include breakpoint(desktop) {
       width: 80%;
       row-gap: 50px;
@@ -42,13 +42,14 @@
       margin: 40px auto;
     }
     .card {
-      width: 47%;
+      width: 48%;
       padding: 25px;
       border-radius: 3px;
       background-color: #f9f7f8c9;
-      -webkit-box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
-      -moz-box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
-      box-shadow: 0px 0px 10px 0px rgba(168,165,168,1);
+      box-shadow: 0px 0px 10px 0px #e8e8e8;
+      &:hover {
+        transform: scale(1.03, 1.03);
+      }
       @include breakpoint(laptop) {
         display: flex;
         flex-direction: column;
@@ -57,6 +58,7 @@
         align-items: center;
       }
       .card-image {
+        margin-top: 30px;
         max-height: 50%;
         img {
           width: 100%;
@@ -72,7 +74,6 @@
         }
       }
       .card-description {
-        min-height: 420px;
         margin-bottom: 15px;
         @include breakpoint(laptop) {
           min-height: auto;
