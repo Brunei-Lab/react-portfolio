@@ -1,4 +1,5 @@
 @import './commom.module.scss';
+@import './animations.scss';
 
 .Presentation {
   display: flex;
@@ -22,11 +23,23 @@
     @include breakpoint(phablet) {
       margin: 250px 7% 315px 8%;
     }
+    h1 {
+      opacity: 0;
+      animation: fade 1s linear forwards;
+    }
+    h3 {
+      opacity: 0;
+      animation: fade 1s linear forwards;
+      animation-delay: 0.5s;
+    }
     h5 {
       font-family: $font-default;
       font-size: 18px;
       font-weight: 500;
       line-height: 30px;
+      opacity: 0;
+      animation: fade 1s linear forwards;
+      animation-delay: 1s;
       a {
         text-decoration: none;
         font-weight: bold;

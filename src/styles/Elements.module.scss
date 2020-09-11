@@ -5,6 +5,8 @@
   position: absolute;
   top: 8%;
   right: 18%;
+  opacity: 0;
+  @include slide-animation(slideA, 1.8s);
   @include breakpoint(desktop) {
     right: 17%;
     img {
@@ -34,15 +36,17 @@
   @include breakpoint(mobile) {
     top: 7%;
   }
-  &:hover {
-    animation: rotate 7s infinite ease-in-out;
-  }
+  // &:hover {
+  //   animation: rotate 7s infinite ease-in-out;
+  // }
 }
 
 .Sparckles {
   position: absolute;
   top: 3%;
   right: 35%;
+  opacity: 0;
+  @include slide-animation(slideC, 2s);
   @include breakpoint(desktop) {
     right: 30%;
   }
@@ -62,6 +66,8 @@
   position: absolute;
   top: 4%;
   right: 16%;
+  opacity: 0;
+  @include slide-animation(slideB, 1.5s);
   @include breakpoint(desktop) {
     right: 11%;
   }
@@ -72,15 +78,17 @@
     height: 230px;
     transform: scaleX(-1);
   }
-  &:hover {
-    animation: pulse 1.5s infinite linear;
-  }
+  // &:hover {
+  //   animation: pulse 1.5s infinite linear;
+  // }
 }
 
 .SparcklesLeft {
   position: absolute;
   top: 10%;
   right: 53%;
+  opacity: 0;
+  @include slide-animation(slideE, 2.2s);
   @include breakpoint(desktop) {
     right: 51%;
   }
@@ -99,6 +107,8 @@
   position: absolute;
   top: 8%;
   right: 9%;
+  opacity: 0;
+  @include slide-animation(slideD, 2.4s);
   @include breakpoint(desktop) {
     right: 6%;
   }

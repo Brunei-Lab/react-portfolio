@@ -37,3 +37,42 @@
   30%, 50%, 70% {transform: translate3d(-4px, 0, 0); }
   40%, 60% { transform: translate3d(4px, 0, 0); }
 }
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 100; }
+}
+
+@keyframes slideA {
+  0% { transform: translate(100px, 60px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideB {
+  0% { transform: translate(30px, -15px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideC {
+  0% { transform: translate(0, -30px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideD {
+  0% { transform: translate(10px, 15px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideE {
+  0% { transform: translate(0, 30px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@mixin slide-animation($anim, $delay) {
+  animation: $anim 0.7s linear forwards;
+  animation-delay: $delay;
+}
