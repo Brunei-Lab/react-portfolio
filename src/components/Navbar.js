@@ -26,7 +26,7 @@ const Navbar = ({ contactLinks }) => {
 
   return (
     <nav className={`${styles.Navbar} ${!visible && styles["Navbar-hidden"]}`}> 
-      <a className={styles.logo} href='logo' key='logo'>
+      <a className={styles.logo} href='#root' key='logo'>
         <img src={Logo} alt="Bruna's logo" />
       </a>
       <div className={styles["navbar-links"]}>
