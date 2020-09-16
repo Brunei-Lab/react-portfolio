@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Contact.module.scss';
+import ContactForm from './ContactForm';
 
 const Contact = ({ contactLinks }) => (
   <div className={styles.Contact}>
@@ -11,6 +12,7 @@ const Contact = ({ contactLinks }) => (
         </a>
       ))}
     </div>
+    <ContactForm />
   </div>
 )
 

@@ -6,8 +6,6 @@ const Navbar = ({ contactLinks }) => {
   const [prevScrollPos, setScrollPos] = useState(window.pageYOffset);
   const [visible, setVisibility] = useState(true);
 
-  console.log(visible)
-
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
     setVisibility(currentScrollPos < prevScrollPos);
@@ -31,7 +29,7 @@ const Navbar = ({ contactLinks }) => {
       </a>
       <div className={styles["navbar-links"]}>
         {contactLinks.map((link, index) => (
-          <a href={link.link} key={index}>< link.icon /></a>
+          <a href={link.link} key={index} target="_blank" rel="noopener noreferrer">< link.icon /></a>
         ))}
       </div>
     </nav>

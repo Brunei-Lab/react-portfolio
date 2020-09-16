@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { StaticKitProvider } from '@statickit/react';
 import Navbar from '../components/Navbar';
 import Presentation from '../components/Presentation';
 import ProjectsContainer from '../components/ProjectsWrapper';
@@ -49,17 +50,19 @@ function App() {
     loading 
       ? <Loader />
       : ( 
-          <div className="App">
-            <Navbar contactLinks={contactLinks} />
-            <Presentation />
-            <Background background="Pink" />
-            <ProjectsContainer projects={projects} />
-            <Background background="Geometric" />
-            <Skills />
-            <Contact contactLinks={contactLinks} />
-            <Background background="Daisys" />
-            <Footer />
-          </div>
+          <StaticKitProvider site="7a1caaf5f8a1">
+            <div className="App">
+              <Navbar contactLinks={contactLinks} />
+              <Presentation />
+              <Background background="Pink" />
+              <ProjectsContainer projects={projects} />
+              <Background background="Geometric" />
+              <Skills />
+              <Contact contactLinks={contactLinks} />
+              <Background background="Daisys" />
+              <Footer />
+            </div>
+          </StaticKitProvider>
         )
   );
 }
