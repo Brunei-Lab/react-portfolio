@@ -1,6 +1,6 @@
 import React from 'react';
 import TechBadge from './TechBadge';
-import Button from './Button';
+import { BiRightArrowAlt } from 'react-icons/bi';
 import facebookImg from '../assets/images/projects/face22.png';
 import capsuleWardrobeImg from '../assets/images/projects/capsule-wardrobe.png';
 import moodImg from '../assets/images/projects/OhMyMood.png';
@@ -31,9 +31,9 @@ const Project = ({project}) => {
             <TechBadge text={tech} key={tech}/>
           ))}
         </div>
-        <div className={styles["btn-container"]}>
+        <div className={styles["links-container"]}>
           {project['links'].map(link => (
-            <Button type={link.type} url={link.url} key={link.type}/>
+            <a className={styles["project-link"]} href={link.url}>View {link.type}<BiRightArrowAlt /></a>
           ))}
         </div>
       </div>

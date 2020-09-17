@@ -14,12 +14,6 @@
   h1 {
     text-align: center;
   }
-  hr { 
-    display: block;
-    width: 150px;
-    background-color: black;
-    margin: 24px auto 48px auto;
-  } 
   .projects-wrapper {
     width: 75%;
     margin: 90px auto;
@@ -79,6 +73,7 @@
         h3 {
           font-weight: bold;
           font-size: 30px;
+          color: #F2A417;
           @include breakpoint(phablet) {
             font-size: 25px;
           }
@@ -99,6 +94,27 @@
         .tech-container {
           display: flex;
           flex-wrap: wrap;
+        }
+        .links-container {
+          .project-link {
+            color: #000000;
+            display: block;
+            font-size: 22px;
+            margin-top: 10px;
+            @include breakpoint(phablet) {
+              font-size: 20px;
+            }
+            &:first-of-type {
+              margin-top: 20px;
+            }
+            &:hover {
+              color: $gold;
+            }
+            svg {
+              vertical-align: middle;
+              margin-left: 5px;
+            }
+          }
         }
       }
     }
