@@ -28,18 +28,23 @@
       animation: fade 1s linear forwards;
     }
     h3 {
-      opacity: 0;
-      animation: fade 1s linear forwards;
-      animation-delay: 0.5s;
+      &:first-of-type {
+        opacity: 0;
+        animation: fade 1s linear forwards;
+        animation-delay: 0.8s;
+      }
+      &:last-of-type {
+        opacity: 0;
+        animation: fade 1s linear forwards;
+        animation-delay: 1.6s;
+      }
     }
-    h5 {
-      font-family: $font-default;
-      font-size: 18px;
-      font-weight: 500;
+    h4 {
+      font-size: 24px;
       line-height: 30px;
       opacity: 0;
       animation: fade 1s linear forwards;
-      animation-delay: 1s;
+      animation-delay: 2.4s;
       a {
         text-decoration: none;
         font-weight: bold;

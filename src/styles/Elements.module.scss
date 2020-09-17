@@ -6,7 +6,7 @@
   top: 8%;
   right: 18%;
   opacity: 0;
-  @include slide-animation(slideA, 1.8s);
+  @include slide-animation(slideA, 2.7s);
   @include breakpoint(desktop) {
     right: 17%;
     img {
@@ -43,7 +43,7 @@
   top: 3%;
   right: 35%;
   opacity: 0;
-  @include slide-animation(slideC, 2s);
+  @include slide-animation(slideC, 2.9s);
   @include breakpoint(desktop) {
     right: 30%;
   }
@@ -61,7 +61,7 @@
   top: 4%;
   right: 16%;
   opacity: 0;
-  @include slide-animation(slideB, 1.5s);
+  @include slide-animation(slideB, 2.4s);
   @include breakpoint(desktop) {
     right: 11%;
   }
@@ -79,7 +79,7 @@
   top: 10%;
   right: 53%;
   opacity: 0;
-  @include slide-animation(slideE, 2.2s);
+  @include slide-animation(slideE, 3.1s);
   @include breakpoint(desktop) {
     right: 51%;
   }
@@ -96,7 +96,7 @@
   top: 8%;
   right: 9%;
   opacity: 0;
-  @include slide-animation(slideD, 2.4s);
+  @include slide-animation(slideD, 3.3s);
   @include breakpoint(desktop) {
     right: 6%;
   }

@@ -3,7 +3,7 @@ import styles from '../styles/Contact.module.scss';
 import ContactForm from './ContactForm';
 
 const Contact = ({ contactLinks }) => (
-  <div className={styles.Contact}>
+  <div className={styles.Contact} id="Contact">
     <h1 className={styles.title}>Let's talk? <span>Send me a message!</span></h1>
     <div className={styles["contact-container"]}>
       <ContactForm />

@@ -90,6 +90,9 @@
         height: 40px;
         border-radius: 5px;
         font-size: 17px;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
     .links-container {

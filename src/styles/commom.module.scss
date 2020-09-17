@@ -23,7 +23,7 @@
   font-family: $font-default;
   font-size: 25px;
   font-weight: normal;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   @include breakpoint(tablet) {
     font-size: 23px;
   }
@@ -33,6 +33,9 @@
   span {
     font-weight: bold;
     color: $gold;
+  }
+  .black {
+    color: black;
   }
 }
 
