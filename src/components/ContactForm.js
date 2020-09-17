@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm, ValidationError } from '@statickit/react';
-
+import styles from '../styles/Contact.module.scss';
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("contactForm");
 
@@ -9,14 +9,24 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email Address
-      </label>
+    <form className={styles["contact-form"]} onSubmit={handleSubmit}>
+      <input 
+        className={styles.name}
+        id = "name"
+        type = "name"
+        name = "name"
+        placeholder = "Name"
+      />
+      <ValidationError 
+        prefix = "Name"
+        field = "name"
+        errors = {state.errors}
+      />
       <input 
         id = "email"
         type = "email"
         name = "email"
+        placeholder = "Email"
       />
       <ValidationError 
         prefix = "Email"
@@ -24,8 +34,10 @@ const ContactForm = () => {
         errors = {state.errors}
       />
       <textarea
+        className={styles.message}
         id = "message"
         name = "message"
+        placeholder = "Message"
       />
       <ValidationError 
         prefix = "Message"

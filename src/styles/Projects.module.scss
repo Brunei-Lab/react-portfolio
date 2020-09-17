@@ -44,9 +44,7 @@
     .card {
       width: 48%;
       padding: 25px;
-      border-radius: 3px;
-      background-color: #f9f7f8c9;
-      box-shadow: 0px 0px 10px 0px #e8e8e8;
+      @include card-background;
       &:hover {
         transform: scale(1.03, 1.03);
       }
