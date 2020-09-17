@@ -1,3 +1,4 @@
+@import './commom.module.scss';
 @import './animations.scss';
 
 .Loader {
@@ -12,6 +13,12 @@
     left: 45%;
     -webkit-animation: rotate 4.0s infinite linear;
     animation: rotate 4.0s infinite linear;
+    @include breakpoint(tablet) {
+      left: 38%;
+    }
+    @include breakpoint(mobile) {
+      left: 29%;
+    }
     .daisy-one,
     .daisy-two {
       height: 100px;

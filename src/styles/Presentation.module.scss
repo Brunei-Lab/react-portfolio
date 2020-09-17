@@ -55,15 +55,15 @@
         }
       }
       @include breakpoint(tablet) {
-        font-size: 15px;
+        font-size: 22px;
       }
       @include breakpoint(phablet) {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 25px;
         margin-bottom: 4px;
       }
       @include breakpoint(mobile) {
-        line-height: 20px;
+        font-size: 19px;
         margin-bottom: 7px;
       }
     }
