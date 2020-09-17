@@ -1,0 +1,49 @@
+@import './constants.scss';
+@import './animations.scss';
+
+.Navbar {
+  background-color: #f9f7f8;
+  height: 80px;
+  width: 100%;
+  padding: 13px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 5px 0px rgba(227, 227, 227, 0.67);
+  transition: top 0.8s ease-out;
+  .navbar-links {
+    a {
+      text-decoration: none;
+      color: black;
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 35px;
+      svg {
+        display: flex;
+      }
+      &:last-of-type {
+        font-size: 32px;
+      }
+      &:hover {
+        color: $gold-light;
+        animation: pulse 3s infinite linear;
+      }
+    }
+  }
+}
+
+.Navbar-hidden {
+  top: -90px;
+}
+
+.logo img {
+  height: 60px;
+  margin: 0 10px;
+  @include breakpoint(mobile) {
+    height: 50px;
+  }
+}

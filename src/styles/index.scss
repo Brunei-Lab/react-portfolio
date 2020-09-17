@@ -1,0 +1,12 @@
+@import './constants.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    position: relative;
+    padding-bottom: 50px;
+}

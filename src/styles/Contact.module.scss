@@ -1,0 +1,43 @@
+@import './commom.module.scss';
+
+.Contact {
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+  @include breakpoint(mobile) {
+    padding: 70px 0;
+  }
+  .title {
+    font-size: 1.7em;
+    span {
+      color: $pink-strong;
+      @include breakpoint(mobile) {
+        display: block;
+      }
+    }
+  }
+  .links-container {
+    margin-top: 40px;
+    @include breakpoint(mobile) {
+      margin-top: 25px;
+    }
+    .contact-link {
+      color: black;
+      font-size: 50px;
+      margin: 7px;
+      vertical-align: middle;
+      @include breakpoint(mobile) {
+        font-size: 45px;
+      }
+      &:last-of-type {
+        font-size: 46px;
+        @include breakpoint(mobile) {
+          font-size: 43px;
+        }
+      }
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+}

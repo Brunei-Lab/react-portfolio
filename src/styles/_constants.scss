@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+// Fonts
+$title-font: 'Marcellus', serif;
+$font-default: 'Montserrat', sans-serif;
+
+// Colors
+$base-gray: #9897A0;
+$pink-strong: #f5778d;
+$gold: #ECA72C;
+$gold-light: #F4BC5C;
+
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (max-width: 1600px) { @content ; }
+  }
+  @else if $point == laptop {
+    @media (max-width: 1200px) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 900px) { @content ; }
+  }
+  @else if $point == phablet {
+    @media (max-width: 700px)  { @content ; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 550px)  { @content ; }
+  }
+}
