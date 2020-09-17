@@ -32,12 +32,12 @@
 }
 
 .Geometric {
-  top: 74%;
+  top: 69%;
   @include breakpoint(laptop) {
-    top: 83%;
+    top: 79%;
   }
   @include breakpoint(tablet) {
-    top: 81%;
+    top: 77%;
   }
 }
 

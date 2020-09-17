@@ -8,15 +8,13 @@ import Skills from './SkillsContainer';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
-import { ImMail } from 'react-icons/im';
 import Loader from '../components/Loader';
 
 function App() {
   const contactLinks = [
     { link: "https://www.linkedin.com/in/brunagenz/", icon: FaLinkedin, ref: "linkedin"},
     { link: "https://github.com/bruna-genz", icon: FaGithubSquare, ref: "github"},
-    { link: "https://twitter.com/Bruna_GK", icon: FaTwitterSquare, ref: "twitter"},                        
-    { link: "mailto:brunagenz92@gmailcom?subject='portfolio contact'", icon: ImMail, ref: "email"},
+    { link: "https://twitter.com/Bruna_GK", icon: FaTwitterSquare, ref: "twitter"}
   ]
 
   const url = "https://gentle-atoll-70907.herokuapp.com/projects";

@@ -1,11 +1,30 @@
 @import './commom.module.scss';
+@import './constants';
 
 .Contact {
+  @include card-background;
   position: relative;
   text-align: center;
-  padding: 100px 0;
+  width: 65%;
+  padding: 40px 25px 10px 25px;
+  margin: 150px auto;
+  @include breakpoint(desktop) {
+    width: 70%;
+  }
+  @include breakpoint(laptop) {
+    width: 80%;
+  }
+  @include breakpoint(tablet) {
+    width: 85%;
+    margin: 70px auto;
+  }
+  @include breakpoint(phablet) {
+    width: 90%;
+    padding: 25px 10px 5px 10px;
+  }
   @include breakpoint(mobile) {
-    padding: 70px 0;
+    margin: 60px auto;
+    padding: 25px 20px 5px 20px;
   }
   .title {
     font-size: 1.7em;
@@ -18,30 +37,74 @@
   }
   .contact-container {
     display: flex;
-    width: 80%;
-    margin: 70px auto 0 auto;
+    justify-content: space-between;
+    @include breakpoint(tablet) {
+      flex-direction: column;
+    }
     .contact-form {
-      @include card-background;
       padding: 25px;
+      width: 55%;
+      @include breakpoint(laptop) {
+        width: 70%;
+      }
+      @include breakpoint(tablet) {
+        padding: 22px;
+        width: 100%;
+      }
+      @include breakpoint(phablet) {
+        padding: 18px;
+      }
+      @include breakpoint(mobile) {
+        padding: 5px;
+      }
+      input {
+        width: 48%;
+        height: 40px;
+        @include breakpoint(mobile) {
+          width: 100%;
+          height: 30px;
+          margin: 0 0 5px 0;
+        }
+      }
       .name {
-        margin-right: 10px;
+        margin-right: 15px;
       }
       .message {
         display: block;
         width: 100%;
-        height: 150px;
+        height: 130px;
         margin: 10px 0;
+        padding: 10px;
+        resize: none;
+        font-size: 15px;
+        @include breakpoint(mobile) {
+          width: 100%;
+          height: 100px;
+          margin: 5px 0;
+        }
       }
       button {
         width: 100%;
-        background-color: $gold;
+        background-color: $gold-light;
         border: none;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 17px;
       }
     }
     .links-container {
-      margin-top: 40px;
-      @include breakpoint(mobile) {
+      margin-top: 28px;
+      width: 45%;
+      @include breakpoint(laptop) {
+        width: 30%;
+      }
+      @include breakpoint(tablet) {
+        width: 100%;
         margin-top: 25px;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 20px;
       }
       .contact-link {
         color: black;
@@ -50,12 +113,6 @@
         vertical-align: middle;
         @include breakpoint(mobile) {
           font-size: 45px;
-        }
-        &:last-of-type {
-          font-size: 46px;
-          @include breakpoint(mobile) {
-            font-size: 43px;
-          }
         }
         &:hover {
           color: $gold;

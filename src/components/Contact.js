@@ -8,6 +8,7 @@ const Contact = ({ contactLinks }) => (
     <div className={styles["contact-container"]}>
       <ContactForm />
       <div className={styles["links-container"]}>
+        <p>Also, follow me on social media:</p>
         { contactLinks.map(contact => (
           <a className={styles["contact-link"]} href={contact.link} key={contact.ref} target="_blank" rel="noopener noreferrer">
             < contact.icon />
