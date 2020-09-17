@@ -1,0 +1,78 @@
+@-webkit-keyframes rotate { 
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes rotate { 
+  100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }
+}
+
+@keyframes half-turn {
+  25% { transform: rotate(-30deg); }
+  75% { transform: rotate(30deg);}
+}
+
+@keyframes half-turn2 {
+  25% { transform: rotate(30deg); }
+  75% { transform: rotate(-30deg);}
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0); }
+  50% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(0.0); -webkit-transform: scale(0.0); } 
+  50% { transform: scale(1.0); -webkit-transform: scale(1.0); }
+}
+
+@keyframes pulse { 
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 100; }
+}
+
+@keyframes slideA {
+  0% { transform: translate(100px, 60px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideB {
+  0% { transform: translate(30px, -15px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideC {
+  0% { transform: translate(0, -30px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideD {
+  0% { transform: translate(10px, 15px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@keyframes slideE {
+  0% { transform: translate(0, 30px); opacity: 0; }
+  66% { opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+@mixin slide-animation($anim, $delay) {
+  animation: $anim 0.7s linear forwards;
+  animation-delay: $delay;
+}

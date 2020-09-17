@@ -1,0 +1,32 @@
+@import './constants.scss';
+
+.Footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  @include breakpoint(mobile) {
+    height: 40px;
+    margin: 0 15px;
+  }
+  p {
+    a {
+      height: max-content;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-left: 5px;
+      img {
+        height: 35px;
+        vertical-align: bottom;
+        @include breakpoint(mobile) {
+          height: 30px;
+        }
+      }
+    }
+  }
+}

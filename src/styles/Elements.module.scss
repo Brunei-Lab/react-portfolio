@@ -1,0 +1,124 @@
+@import './constants.scss';
+@import './animations.scss';
+
+.Daisy {
+  position: absolute;
+  top: 8%;
+  right: 18%;
+  opacity: 0;
+  @include slide-animation(slideA, 1.8s);
+  @include breakpoint(desktop) {
+    right: 17%;
+    img {
+      height: 400px;
+    }
+  }
+  @include breakpoint(laptop) {
+    top: 5.5%;
+    right: 7%;
+    img {
+      height: 300px;
+    }
+  }
+  @include breakpoint(tablet) {
+    top: 5.3%;
+    right: 2%;
+    img {
+      height: 250px;
+    }
+  }
+  @include breakpoint(phablet) {
+    top: 4.7%;
+    img {
+      height: 200px;
+    }
+  }
+  @include breakpoint(mobile) {
+    top: 7%;
+  }
+  // &:hover {
+  //   animation: rotate 7s infinite ease-in-out;
+  // }
+}
+
+.Sparckles {
+  position: absolute;
+  top: 3%;
+  right: 35%;
+  opacity: 0;
+  @include slide-animation(slideC, 2s);
+  @include breakpoint(desktop) {
+    right: 30%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
+  img {
+    transform: scaleX(-1);
+    height: 130px;
+  }
+  // &:hover {
+  //   animation: shake 1s infinite both;
+  // }
+}
+
+.SmallDaisy {
+  position: absolute;
+  top: 4%;
+  right: 16%;
+  opacity: 0;
+  @include slide-animation(slideB, 1.5s);
+  @include breakpoint(desktop) {
+    right: 11%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
+  img {
+    height: 230px;
+    transform: scaleX(-1);
+  }
+  // &:hover {
+  //   animation: pulse 1.5s infinite linear;
+  // }
+}
+
+.SparcklesLeft {
+  position: absolute;
+  top: 10%;
+  right: 53%;
+  opacity: 0;
+  @include slide-animation(slideE, 2.2s);
+  @include breakpoint(desktop) {
+    right: 51%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
+  img {
+    height: 120px;
+  }
+  // &:hover {
+  //   animation: half-turn 1s infinite linear;
+  // }
+}
+
+.SparcklesRight {
+  position: absolute;
+  top: 8%;
+  right: 9%;
+  opacity: 0;
+  @include slide-animation(slideD, 2.4s);
+  @include breakpoint(desktop) {
+    right: 6%;
+  }
+  @include breakpoint(laptop) {
+    display: none;
+  }
+  img {
+    height: 120px;
+  }
+  // &:hover {
+  //   animation: half-turn2 1s infinite linear;
+  // }
+}
