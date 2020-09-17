@@ -3,47 +3,52 @@
 
 .SkillsContainer {
   position: relative;
-  margin-top: 170px;
+  margin: 170px 0 200px 0;
   text-align: center;
+  @include breakpoint(laptop) {
+    margin: 150px 0;
+  }
+  @include breakpoint(tablet) {
+    margin: 120px 0;
+  }
   .skills-wrapper {
-    height: 480px;
-    width: 45%;
+    width: 60%;
     margin: 90px auto;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     align-content: space-between;
     @include breakpoint(tablet) {
-      width: 50%;
+      width: 65%;
       margin: 80px auto;
     }
     @include breakpoint(phablet) {
-      width: 65%;
+      width: 75%;
       margin: 70px auto;
     }
     @include breakpoint(mobile) {
-      height: 530px;
-      width: 90%;
+      width: 85%;
       margin: 40px auto;
       font-size: 15px;
     }
-    .Skill {
-      background-color: #F4BC5C;
-      border-radius: 5px;
-      padding: 15px 0;
-      margin: 5px;
-      width: 45%;
-      svg {
-        margin-right: 15px;
-        font-size: 20px;
-        vertical-align: text-bottom;
-        @include breakpoint(mobile) {
-          margin-right: 7px;
-        }
-      }
-      &:hover {
+    .column {
+      width: 100%;
+      .Skill {
+        background-color: #F4BC5C;
+        border-radius: 5px;
+        padding: 15px 0;
+        margin: 5px;
+        width: 90%;
         svg {
-          animation: half-turn 1s infinite linear;
+          margin-right: 15px;
+          font-size: 20px;
+          vertical-align: text-bottom;
+          @include breakpoint(mobile) {
+            margin-right: 7px;
+          }
+        }
+        &:hover {
+          svg {
+            animation: half-turn 1s infinite linear;
+          }
         }
       }
     }

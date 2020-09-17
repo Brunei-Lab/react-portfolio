@@ -43,9 +43,9 @@
 
 .Daisys {
   bottom: 0;
-  height: 185px;
+  height: 260px;
   @include breakpoint(mobile) {
-    height: 155px;
+    height: 210px;
   }
   .bg {
     border-radius: 50% 50% 0 0 / 50%;

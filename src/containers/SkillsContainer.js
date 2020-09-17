@@ -26,12 +26,18 @@ const SkillsContainer = () => {
                   { technology: "GitHub", "icon": AiFillGithub},
                   { technology: "Heroku", "icon": SiHeroku},
                 ]
+  const middle = skills.length / 2
   
   return (
     <div className={styles.SkillsContainer}>
       <h1 className={styles.title}>Techical Skills</h1>
       <div className={styles["skills-wrapper"]} >
-        {skills.map(currentSkill => <Skill key={currentSkill.technology} skill={currentSkill} />)}
+        <div className={styles.column}>
+          {skills.slice(0, middle).map(currentSkill => <Skill key={currentSkill.technology} skill={currentSkill} />)}
+        </div>
+        <div className={styles.column}>
+          {skills.slice(middle).map(currentSkill => <Skill key={currentSkill.technology} skill={currentSkill} />)}
+        </div>
       </div>
     </div>
   )
