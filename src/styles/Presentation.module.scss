@@ -4,63 +4,53 @@
 .Presentation {
   display: flex;
   .text {
-    margin: 260px 0 500px 20%;
-    width: 35%;
+    margin: 270px 0 500px 11%;
+    width: 70%;
     @include breakpoint(desktop) {
-      margin: 260px 0 480px 15%;
-      width: 47%;
+      margin: 260px 5% 480px 11%;
     }
     @include breakpoint(laptop) {
-      margin: 260px 0 460px 10%;
+      margin: 260px 10% 460px 10%;
       width: 100%;
     }
     @include breakpoint(tablet) {
-      margin: 230px 7% 400px 8%;
+      margin: 230px 5%  400px 8%;
     }
     @include breakpoint(phablet) {
-      margin: 200px 7% 315px 8%;
+      margin: 200px 5%  315px 8%;
     }
     @include breakpoint(phablet) {
-      margin: 250px 7% 315px 8%;
+      margin: 250px 3%  315px 8%;
     }
     h1 {
       opacity: 0;
-      animation: fade 1s linear forwards;
+      @include fade(0);
     }
     h3 {
-      opacity: 0;
-      animation: fade 1s linear forwards;
-      animation-delay: 0.5s;
+      &:first-of-type {
+        margin-bottom: 8px;
+        opacity: 0;
+        @include fade(0.8s);
+      }
+      &:nth-of-type(2) {
+        margin-bottom: 18px;
+        opacity: 0;
+        @include fade(1.6s);
+      }
+      &:last-of-type {
+        @include fade(2.4s);
+      }
     }
-    h5 {
-      font-family: $font-default;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 30px;
-      opacity: 0;
-      animation: fade 1s linear forwards;
-      animation-delay: 1s;
-      a {
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-        &:hover {
-          color: $gold;
-          text-decoration: underline;
-        }
-      }
-      @include breakpoint(tablet) {
-        font-size: 15px;
-      }
-      @include breakpoint(phablet) {
-        font-size: 14px;
-        line-height: 25px;
-        margin-bottom: 4px;
-      }
-      @include breakpoint(mobile) {
-        line-height: 20px;
-        margin-bottom: 7px;
-      }
+    .button {
+      color: black;
+      text-decoration: none;
+      padding: 7px 20px;
+      margin-top: 25px;
+      display: block;
+      width: 180px;
+      @include button;
+      @include fade(2.8s);
+
     }
   }
   .elements-container {

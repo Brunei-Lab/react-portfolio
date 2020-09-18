@@ -4,7 +4,7 @@ import Project from './Project';
 
 const ProjectsContainer = ({ projects }) => (
   <div className={styles.ProjectsContainer} id="Projects">
-    <h1 className={styles.title}>Selected projects</h1>
+    <h1 className={styles.title}>My projects</h1>
     <div className={styles["projects-wrapper"]} >
       { projects.map(project => (
         < Project key={project.title} project={project}/>

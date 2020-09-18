@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../assets/images/bruna-logo.png';
 import styles from '../styles/Navbar.module.scss';
+import { ImMail } from 'react-icons/im';
 
 const Navbar = ({ contactLinks }) => {
   const [prevScrollPos, setScrollPos] = useState(window.pageYOffset);
   const [visible, setVisibility] = useState(true);
-
-  console.log(visible)
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
@@ -31,8 +30,9 @@ const Navbar = ({ contactLinks }) => {
       </a>
       <div className={styles["navbar-links"]}>
         {contactLinks.map((link, index) => (
-          <a href={link.link} key={index}>< link.icon /></a>
+          <a href={link.link} key={index} target="_blank" rel="noopener noreferrer">< link.icon /></a>
         ))}
+        <a href='#Contact'>< ImMail /></a>
       </div>
     </nav>
   ) 
