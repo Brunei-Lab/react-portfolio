@@ -76,3 +76,9 @@
   animation: $anim 0.7s linear forwards;
   animation-delay: $delay;
 }
+
+@mixin fade($delay) {
+  opacity: 0;
+  animation: fade 1s linear forwards;
+  animation-delay: $delay;
+}

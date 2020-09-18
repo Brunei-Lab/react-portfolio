@@ -85,14 +85,7 @@
       }
       button {
         width: 100%;
-        background-color: $gold-light;
-        border: none;
-        height: 40px;
-        border-radius: 5px;
-        font-size: 17px;
-        &:hover {
-          cursor: pointer;
-        }
+        @include button;
       }
     }
     .links-container {
