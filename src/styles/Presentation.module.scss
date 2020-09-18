@@ -20,7 +20,7 @@
       margin: 200px 5%  315px 8%;
     }
     @include breakpoint(phablet) {
-      margin: 250px 3%  315px 8%;
+      margin: 215px 7%  315px 8%;
     }
     h1 {
       opacity: 0;
@@ -31,6 +31,9 @@
         margin-bottom: 8px;
         opacity: 0;
         @include fade(0.8s);
+        @include breakpoint(mobile) {
+          margin-bottom: 12px;
+        }
       }
       &:nth-of-type(2) {
         margin-bottom: 18px;
@@ -50,6 +53,9 @@
       width: 180px;
       @include button;
       @include fade(2.8s);
+      @include breakpoint(mobile) {
+        margin-bottom: 22px;
+      }
 
     }
   }
