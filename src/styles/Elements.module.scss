@@ -3,14 +3,18 @@
 
 .Daisy {
   position: absolute;
-  top: 8%;
-  right: 18%;
+  top: 9%;
+  right: 15%;
   opacity: 0;
-  @include slide-animation(slideA, 1.8s);
+  @include slide-animation(slideA, 3.2s);
+  img {
+    height: 350px;
+  }
   @include breakpoint(desktop) {
+    top: 9%;
     right: 17%;
     img {
-      height: 400px;
+      height: 325px;
     }
   }
   @include breakpoint(laptop) {
@@ -21,32 +25,30 @@
     }
   }
   @include breakpoint(tablet) {
-    top: 5.3%;
-    right: 2%;
+    top: 6%;
+    right: 3%;
     img {
       height: 250px;
     }
   }
   @include breakpoint(phablet) {
-    top: 4.7%;
+    top: 6.5%;
+    right: 5%;
     img {
       height: 200px;
     }
   }
   @include breakpoint(mobile) {
-    top: 7%;
+    top: 7.7%;
   }
-  // &:hover {
-  //   animation: rotate 7s infinite ease-in-out;
-  // }
 }
 
 .Sparckles {
   position: absolute;
-  top: 3%;
-  right: 35%;
+  top: 3.5%;
+  right: 27%;
   opacity: 0;
-  @include slide-animation(slideC, 2s);
+  @include slide-animation(slideC, 3.4s);
   @include breakpoint(desktop) {
     right: 30%;
   }
@@ -55,19 +57,16 @@
   }
   img {
     transform: scaleX(-1);
-    height: 130px;
+    height: 120px;
   }
-  // &:hover {
-  //   animation: shake 1s infinite both;
-  // }
 }
 
 .SmallDaisy {
   position: absolute;
-  top: 4%;
-  right: 16%;
+  top: 4.5%;
+  right: 10%;
   opacity: 0;
-  @include slide-animation(slideB, 1.5s);
+  @include slide-animation(slideB, 3s);
   @include breakpoint(desktop) {
     right: 11%;
   }
@@ -78,19 +77,16 @@
     height: 230px;
     transform: scaleX(-1);
   }
-  // &:hover {
-  //   animation: pulse 1.5s infinite linear;
-  // }
 }
 
 .SparcklesLeft {
   position: absolute;
   top: 10%;
-  right: 53%;
+  right: 42%;
   opacity: 0;
-  @include slide-animation(slideE, 2.2s);
+  @include slide-animation(slideE, 3.6s);
   @include breakpoint(desktop) {
-    right: 51%;
+    right: 48%;
   }
   @include breakpoint(laptop) {
     display: none;
@@ -98,17 +94,14 @@
   img {
     height: 120px;
   }
-  // &:hover {
-  //   animation: half-turn 1s infinite linear;
-  // }
 }
 
 .SparcklesRight {
   position: absolute;
-  top: 8%;
-  right: 9%;
+  top: 8.5%;
+  right: 5%;
   opacity: 0;
-  @include slide-animation(slideD, 2.4s);
+  @include slide-animation(slideD, 3.8s);
   @include breakpoint(desktop) {
     right: 6%;
   }
@@ -118,7 +111,4 @@
   img {
     height: 120px;
   }
-  // &:hover {
-  //   animation: half-turn2 1s infinite linear;
-  // }
 }

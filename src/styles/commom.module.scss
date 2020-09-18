@@ -21,17 +21,40 @@
 
 .subtitle {
   font-family: $font-default;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: normal;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  @include breakpoint(desktop) {
+    font-size: 20px;
+  }
   @include breakpoint(tablet) {
-    font-size: 23px;
+    font-size: 19px;
   }
   @include breakpoint(phablet) {
-    font-size: 20px;
+    font-size: 18px;
   }
   span {
     font-weight: bold;
     color: $gold;
+  }
+  .black {
+    color: black;
+  }
+}
+
+@mixin card-background {
+  border-radius: 3px;
+  background-color: #f9f7f8c9;
+  box-shadow: 0px 0px 10px 0px #e8e8e8;
+}
+
+@mixin button {
+  background-color: $gold-light;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 17px;
+  &:hover {
+    cursor: pointer;
   }
 }

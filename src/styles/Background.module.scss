@@ -21,31 +21,28 @@
     top: 6.6%;
   }
   @include breakpoint(tablet) {
-    top: 6%;
-  }
-  @include breakpoint(phablet) {
-    top: 5%;
+    top: 7%;
   }
   @include breakpoint(mobile) {
-    top: 7%;
+    top: 8%;
   }
 }
 
 .Geometric {
-  top: 74%;
+  top: 69%;
   @include breakpoint(laptop) {
-    top: 83%;
+    top: 79%;
   }
   @include breakpoint(tablet) {
-    top: 81%;
+    top: 77%;
   }
 }
 
 .Daisys {
   bottom: 0;
-  height: 185px;
+  height: 260px;
   @include breakpoint(mobile) {
-    height: 155px;
+    height: 210px;
   }
   .bg {
     border-radius: 50% 50% 0 0 / 50%;
