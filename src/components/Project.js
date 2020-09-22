@@ -33,7 +33,7 @@ const Project = ({project}) => {
         </div>
         <div className={styles["links-container"]}>
           {project['links'].map(link => (
-            <a className={styles["project-link"]} href={link.url}>View {link.type}<BiRightArrowAlt /></a>
+            <a className={styles["project-link"]} href={link.url} target="_blank" rel="noopener noreferrer">View {link.type}<BiRightArrowAlt /></a>
           ))}
         </div>
       </div>
