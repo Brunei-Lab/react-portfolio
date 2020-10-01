@@ -16,6 +16,7 @@ const ContactForm = () => {
         type = "name"
         name = "name"
         placeholder = "Name"
+        required
       />
       <ValidationError 
         prefix = "Name"
@@ -27,6 +28,7 @@ const ContactForm = () => {
         type = "email"
         name = "email"
         placeholder = "Email"
+        required
       />
       <ValidationError 
         prefix = "Email"
@@ -38,6 +40,7 @@ const ContactForm = () => {
         id = "message"
         name = "message"
         placeholder = "Message"
+        required
       />
       <ValidationError 
         prefix = "Message"
